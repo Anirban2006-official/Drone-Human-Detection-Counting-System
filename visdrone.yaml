@@ -1,0 +1,29 @@
+# VisDrone Dataset Configuration for YOLOv8
+# Dataset: https://www.kaggle.com/datasets/banuprasadb/visdrone-dataset
+
+path: ./data/VisDrone  # root dataset directory
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 2
+
+# Class names (mapped from VisDrone original 10 classes)
+names:
+  0: person
+  1: car
+
+# VisDrone original class mapping:
+# 0: ignored regions
+# 1: pedestrian       -> person (0)
+# 2: people           -> person (0)
+# 3: bicycle          -> ignored
+# 4: car              -> car (1)
+# 5: van              -> car (1)
+# 6: truck            -> car (1)
+# 7: tricycle         -> ignored
+# 8: awning-tricycle  -> ignored
+# 9: bus              -> car (1)
+# 10: motor           -> ignored
+# 11: others          -> ignored
